@@ -7,6 +7,7 @@
   "main": ".opencode/plugins/ryugi.js",
   "keywords": [
     "pi-package",
+    "dsh-plugin",
     "skills",
     "tdd",
     "debugging",
@@ -20,5 +21,10 @@
     "skills": [
       "./skills"
     ]
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./.dsh/cordis.patch.yml"
+    }
   }
 }

@@ -68,6 +68,7 @@ Then send `Let's make a react todo list`. Ryugi starts brainstorming before any 
 |---|---|
 | Antigravity | `agy plugin install https://github.com/Innei/ryugi` |
 | Codex, Cursor | Add this repo as a local plugin source ([detail](docs/install.md#codex-cursor)) |
+| DeepSeek Harness | `dsh plugin --profile web add github:Innei/ryugi` ([detail](.dsh/INSTALL.md)) |
 | Devin CLI | `devin plugins install Innei/ryugi` |
 | Factory Droid | `droid plugin marketplace add https://github.com/Innei/ryugi` then `droid plugin install ryugi@ryugi` |
 | Gemini CLI | `gemini extensions install https://github.com/Innei/ryugi` |

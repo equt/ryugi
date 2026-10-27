@@ -34,6 +34,34 @@ The repository carries the manifests (`.codex-plugin/`,
 either official marketplace. Add this repository as a local plugin source
 following your harness's plugin docs.
 
+## DeepSeek Harness
+
+The repository declares a DeepSeek Harness bundle (`dsh.bundle` in
+`package.json`), so the same checkout installs as a profile plugin.
+
+In DeepSeek Harness Desktop, open **Plugins**, select **Add plugin**, and enter
+`https://github.com/Innei/ryugi` (or the `Innei/ryugi` shorthand). Enable
+**Ryugi** when the install finishes.
+
+From the CLI, install into the profile you boot:
+
+```bash
+dsh plugin --profile web add github:Innei/ryugi
+dsh web
+```
+
+The bundle registers the bundled `skills/` directory with the native skill
+catalog and injects the `using-ryugi` bootstrap at session start, again after
+compaction. There is no per-session opt-in. Updating is a remove and reinstall
+(or **Update** in Plugins):
+
+```bash
+dsh plugin --profile web remove ryugi
+dsh plugin --profile web add github:Innei/ryugi
+```
+
+Full guide: [.dsh/INSTALL.md](../.dsh/INSTALL.md).
+
 ## Devin CLI
 
 ```bash

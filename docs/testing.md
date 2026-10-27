@@ -13,6 +13,7 @@ Live in `tests/`. Currently:
 - `tests/viewer-release/` — the guard that fails when `artifacts/src/` changed since the last release tag without a version bump.
 - `tests/version-bump/` — `bump-version.sh` behavior and that every declared version file, including the viewer's, stays in sync.
 - `tests/opencode/` — bash tests for OpenCode plugin loading, bootstrap caching, and tool registration.
+- `tests/dsh/` — `node --test` checks for the DeepSeek Harness bundle: skill-provider discovery, the session-start bootstrap, subagent/resume/compaction injection rules, and the tool mapping reference.
 - `tests/codex-plugin-sync/` — bash sync verification.
 - `tests/hooks/` — the hook scripts: project-root resolution shared by the hooks (`test-project-root.sh`), `session-start` bootstrap output (and that starting the artifacts server for projects with published documents never delays it), the Windows `run-hook.cmd` wrapper, the `user-prompt-submit` hook that attaches the open Artboard and document selections, unread comment reminders and auto-publish notices, and the `stop` hook that asks the artifacts server to auto-publish what changed.
 - `tests/kimi/` — bash/Python checks for Kimi plugin manifest wiring.

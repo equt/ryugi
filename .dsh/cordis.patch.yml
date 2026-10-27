@@ -1,0 +1,9 @@
+# DeepSeek Harness bundle layer for Ryugi.
+#
+# Installed as a profile bundle (`dsh.bundle` in the repo-root package.json).
+# The row loads the plugin beside the bundled `skills/` directory; the plugin
+# registers that directory as a skill provider and injects the `using-ryugi`
+# bootstrap at session start. `./index.js` resolves relative to this patch file.
+- insert:
+    - id: ryugi
+      name: ./index.js
